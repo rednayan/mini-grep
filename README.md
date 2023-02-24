@@ -7,24 +7,24 @@ To use this program, you'll need to have Rust and Cargo installed on your system
 
 Once you have Rust and Cargo installed, you can clone this repository and run the following command in the project directory:
 
-cargo build --release
+`cargo build --release`
 
 This will build the program in release mode and create an executable file in the target/release/ directory.
 Usage
 
 The basic usage of the program is:
 
-./target/release/minimal_grep <pattern> <file>
+`./target/release/minimal_grep <pattern> <file>`
 
 Where <pattern> is the regular expression pattern you want to search for, and <file> is the file you want to search in.
 
 For example, if you want to search for the word "hello" in a file named myfile.txt, you can run:
 
-./target/release/minimal_grep hello myfile.txt
+`./target/release/minimal_grep hello myfile.txt`
 
 By default, the program will print out all lines that match the pattern.
 
-$IGNORE_CASE = 1 ./target/release/minimal_grep hello myfile.txt
+`$IGNORE_CASE = 1 ./target/release/minimal_grep hello myfile.txt`
 
 By default, the program will run the query as case sensitive but can be made insensitive by setting the environment variable IGNORE_CASE to 1.
 
